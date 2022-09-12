@@ -5,4 +5,8 @@
     <string name="digite_seu_email">Digite seu email</string>
     <string name="email">Email</string>
     <string name="senha">Senha</string>
+    <string name="ou">ou</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastrar_se">Cadastrar-se</string>
+    <string name="editar_dados">Editar Dados</string>
 </resources>

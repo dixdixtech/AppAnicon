@@ -4,19 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".ProfileActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="30dp"
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circle"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logoapp">
+        app:srcCompat="@drawable/ic_round_person_24" />
 
-    </ImageView>
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/allerta"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btneditar"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/allerta"
+        android:text="@string/editar_dados"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserName" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +69,7 @@
         android:id="@+id/editTextEmail"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/outlined_black"
         android:drawableEnd="@drawable/email"
         android:drawablePadding="5dp"
@@ -46,9 +79,11 @@
         android:paddingTop="10dp"
         android:paddingEnd="12dp"
         android:paddingBottom="10dp"
+        android:enabled="false"
+        android:hint="username@gmail.com"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btneditar"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <TextView
@@ -79,58 +114,10 @@
         android:paddingTop="10dp"
         android:paddingEnd="12dp"
         android:paddingBottom="10dp"
+        android:enabled="false"
+        android:hint="********"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/btnentrar"
-        android:layout_width="220dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/black"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/allerta"
-        android:text="@string/entrar"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSenha" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/allerta"
-        android:text="@string/ou"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnentrar" />
-
-    <Button
-        android:id="@+id/btncadastro"
-        android:layout_width="220dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/black"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/allerta"
-        android:text="@string/cadastrar_se"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
