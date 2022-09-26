@@ -10,4 +10,9 @@
     <string name="cadastrar_se">Cadastrar-se</string>
     <string name="editar_dados">Editar Dados</string>
     <string name="crie_sua_conta">CRIE SUA CONTA</string>
+    <string name="nome">Nome</string>
+    <string name="insira_seu_nome">Insira seu nome...</string>
+    <string name="insira_seu_email">Insira seu email...</string>
+    <string name="insira_sua_senha">Insira sua senha...</string>
+    <string name="concluir">Concluir</string>
 </resources>
