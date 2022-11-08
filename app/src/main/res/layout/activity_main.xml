@@ -81,7 +81,7 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ImageView
+    <Button
         android:layout_width="90dp"
         android:layout_height="89dp"
         android:background="@drawable/circle_secondary"
