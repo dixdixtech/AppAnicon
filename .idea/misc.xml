@@ -8,6 +8,7 @@
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable/edittext_rounded_white.xml" value="0.1935" />
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable/email.xml" value="0.3635" />
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable/gray_background.xml" value="0.2555" />
+        <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable/grey_user.xml" value="0.2555" />
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.328" />
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable/ic_round_person_24.xml" value="0.328" />
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable/ic_round_search_24.xml" value="0.2555" />
@@ -16,7 +17,7 @@
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable/rounded_white.xml" value="0.1925" />
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_cadastro.xml" value="0.3625" />
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/3etimds/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_profile.xml" value="0.3625" />
       </map>
     </option>
