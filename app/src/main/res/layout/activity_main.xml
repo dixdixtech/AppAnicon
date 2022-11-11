@@ -20,8 +20,8 @@
 
 
         <EditText
-            android:id="@+id/inputLivro"
-            android:layout_width="330dp"
+            android:id="@+id/input"
+            android:layout_width="302dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
             android:background="@drawable/gray_background"
@@ -41,14 +41,18 @@
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:background="@drawable/circle_secondary"
+
+            android:id="@+id/imageButtonPerfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/circle_secondary"
             android:src="@drawable/ic_round_person_24"
+            android:padding="4dp"
+            android:layout_gravity="center_horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"/>
 
     </LinearLayout>
 
@@ -59,6 +63,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="5dp"
         android:scrollbars="none"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,19 +85,18 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:background="@drawable/circle_secondary"
-                    android:elevation="15dp"
-                    android:padding="0dp"
+                    android:elevation="10dp"
+                    android:layout_margin="10dp"
                     android:src="@drawable/ic_camisa" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
-                    android:fontFamily="@font/allerta"
+
                     android:text="@string/vestuario"
                     android:textColor="@color/red_primary" />
             </LinearLayout>
@@ -106,19 +110,91 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:elevation="10dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/circle_secondary"
-                    android:padding="0dp"
+                    android:padding="10dp"
                     android:src="@drawable/ic_mochila" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
-                    android:fontFamily="@font/allerta"
                     android:text="@string/acessorios"
+                    android:textColor="@color/red_primary" />
+            </LinearLayout>
+
+            <!-- Botão Categoria 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_secondary"
+                    android:elevation="10dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_camisa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/vestuario"
+                    android:textColor="@color/red_primary" />
+            </LinearLayout>
+
+            <!-- Botão Categoria 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_secondary"
+                    android:elevation="10dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_camisa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/vestuario"
+                    android:textColor="@color/red_primary" />
+            </LinearLayout>
+
+            <!-- Botão Categoria 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_secondary"
+                    android:elevation="10dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_camisa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/vestuario"
                     android:textColor="@color/red_primary" />
             </LinearLayout>
 
