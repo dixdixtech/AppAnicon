@@ -18,4 +18,7 @@
     <string name="pesquisar">Pesquisar</string>
     <string name="acessorios">Acessórios</string>
     <string name="vestuario">Vestuário</string>
+    <string name="nomedoproduto">Nomedoproduto</string>
+    <string name="c_digo_do_produto">Código do Produto</string>
+    <string name="c_digo">Código</string>
 </resources>
