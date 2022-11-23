@@ -21,4 +21,7 @@
     <string name="nomedoproduto">Nomedoproduto</string>
     <string name="c_digo_do_produto">Código do Produto</string>
     <string name="c_digo">Código</string>
+    <string name="colecionaveis">Colecionáveis</string>
+    <string name="livros">Livros</string>
+    <string name="decoracoes">Decorações</string>
 </resources>
