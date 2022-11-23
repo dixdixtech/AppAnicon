@@ -22,13 +22,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ProfileActivity extends AppCompatActivity{
+public class ProfileActivity extends AppCompatActivity {
 
-//    private static final String FILE_NAME = "usuarioLogado.json";
-//    TextView txtUsuario;
-//    EditText txtLogin, txtSenha;
-//    Button btnEditar, btnSair;
-//
+    private static final String FILE_NAME = "usuarioLogado.json";
+    TextView txtUsuario;
+    EditText txtLogin, txtSenha;
+    Button btnEditar, btnSair;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,53 +36,51 @@ public class ProfileActivity extends AppCompatActivity{
 
 
         setContentView(R.layout.activity_profile);
+
+        txtUsuario = findViewById(R.id.UserName);
+        txtLogin = findViewById(R.id.editTextEmail);
+        txtSenha = findViewById(R.id.editTextSenha);
+        btnEditar = findViewById(R.id.btneditar);
+        btnSair = findViewById(R.id.btnSair);
+
+        Gson gson = new Gson();
+        String usuarioJson = lerDados();
+        Usuario usuario = gson.fromJson(usuarioJson, Usuario.class);
+
+        txtUsuario.setText(usuario.getNome());
+        txtLogin.setHint(usuario.getLogin());
+
+        btnEditar.setOnClickListener(v -> {
+            Intent intentEditar = new Intent(getApplicationContext(), CadastroActivity.class);
+            intentEditar.putExtra("Usuario", usuario);
+            startActivity(intentEditar);
+        });
+
+
+        btnSair.setOnClickListener(v -> {
+            Intent login = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(login);
+        });
     }
-//        txtUsuario = findViewById(R.id.UserName);
-//        txtLogin = findViewById(R.id.editTextEmail);
-//        txtSenha = findViewById(R.id.editTextSenha);
-//        btnEditar = findViewById(R.id.btneditar);
-//        btnSair = findViewById(R.id.btnSair );
-//
-//        Gson gson = new Gson();
-//        String usuarioJson = lerDados();
-//        Usuario usuario = gson.fromJson(usuarioJson, Usuario.class);
-//
-//        txtUsuario.setText(usuario.getNome());
-//        txtLogin.setHint(usuario.getLogin());
-//
-//        btnEditar.setOnClickListener(v -> {
-//            Intent intentEditar = new Intent(getApplicationContext(), CadastroActivity.class);
-//            intentEditar.putExtra("Usuario", usuario);
-//            startActivity(intentEditar);
-//        });
-//
-//
-//        btnSair.setOnClickListener(v -> {
-//            Intent login = new Intent(getApplicationContext(), LoginActivity.class);
-//            startActivity(login);
-//        });
-//    }
-//
-//
-//
-//
-//    private String lerDados() {
-//        FileInputStream fis;
-//        try {
-//            fis = openFileInput(FILE_NAME);
-//            InputStreamReader isr = new InputStreamReader(fis);
-//            BufferedReader br = new BufferedReader(isr);
-//            StringBuilder sb = new StringBuilder();
-//            String text;
-//            while ((text = br.readLine()) != null) {
-//                sb.append(text).append("\n");
-//            }
-//            return sb.toString();
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
+
+
+    private String lerDados() {
+        FileInputStream fis;
+        try {
+            fis = openFileInput(FILE_NAME);
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader br = new BufferedReader(isr);
+            StringBuilder sb = new StringBuilder();
+            String text;
+            while ((text = br.readLine()) != null) {
+                sb.append(text).append("\n");
+            }
+            return sb.toString();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

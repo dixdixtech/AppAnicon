@@ -67,4 +67,10 @@ public class UsuarioDAO {
 
         return cursor.getCount() > 0;
     }
+
+    public Boolean verificarSenha(String senha){
+        Cursor cursor = banco.rawQuery("SELECT * FROM tbUsuario WHERE senha = ?", new String[] {senha});
+
+        return cursor.getCount() > 0;
+    }
 }
