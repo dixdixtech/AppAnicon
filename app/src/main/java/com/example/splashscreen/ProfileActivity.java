@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import com.example.splashscreen.usuario.Usuario;
 import com.google.gson.Gson;
@@ -28,6 +29,7 @@ public class ProfileActivity extends AppCompatActivity {
     TextView txtUsuario;
     EditText txtLogin, txtSenha;
     Button btnEditar, btnSair;
+    ImageButton btnvoltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,7 @@ public class ProfileActivity extends AppCompatActivity {
         txtSenha = findViewById(R.id.editTextSenha);
         btnEditar = findViewById(R.id.btneditar);
         btnSair = findViewById(R.id.btnSair);
+        btnvoltar = findViewById(R.id.btnvoltar);
 
         Gson gson = new Gson();
         String usuarioJson = lerDados();
@@ -49,6 +52,11 @@ public class ProfileActivity extends AppCompatActivity {
 
         txtUsuario.setText(usuario.getNome());
         txtLogin.setHint(usuario.getLogin());
+
+        btnvoltar.setOnClickListener(v ->{
+            Intent main = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(main);
+        });
 
         btnEditar.setOnClickListener(v -> {
             Intent intentEditar = new Intent(getApplicationContext(), CadastroActivity.class);

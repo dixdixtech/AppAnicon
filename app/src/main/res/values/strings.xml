@@ -25,4 +25,6 @@
     <string name="livros">Livros</string>
     <string name="decoracoes">Decorações</string>
     <string name="editar">Editar</string>
+    <string name="string_anicon">Anicon</string>
+    <string name="fazer_logout">Fazer Logout</string>
 </resources>

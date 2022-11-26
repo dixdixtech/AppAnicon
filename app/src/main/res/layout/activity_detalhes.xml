@@ -4,17 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Activity_detalhes">
 
-    <ImageView
-        android:layout_width="280dp"
-        android:layout_height="230dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+    <ImageButton
+        android:id="@+id/btnvoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        />
+        android:background="@drawable/circle_white"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+    <ImageView
+        android:id="@+id/imgproduto"
+        android:layout_width="350dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logoapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnvoltar" />
 
 
+
+    <TextView
+        android:id="@+id/txtproduto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/allerta"
+        android:text="FUNKO POP! AVENGERS GAME - TASKMASTER 47815"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/imgproduto"
+        app:layout_constraintTop_toBottomOf="@id/imgproduto" />
+
+    <TextView
+        android:id="@+id/txtcategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/allerta"
+        android:text="CATEGORIA"
+        android:textColor="@color/red_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/imgproduto"
+        app:layout_constraintTop_toBottomOf="@+id/txtproduto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/allerta"
+        android:text="R$799,00"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@+id/imgproduto"
+        app:layout_constraintEnd_toEndOf="@id/imgproduto"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

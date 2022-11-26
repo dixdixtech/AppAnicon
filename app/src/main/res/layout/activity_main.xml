@@ -45,14 +45,15 @@
             android:id="@+id/imageButtonPerfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginStart="10dp"
             android:background="@drawable/circle_secondary"
-            android:src="@drawable/ic_round_person_24"
             android:padding="4dp"
-            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_round_person_24"
+            android:translationX="10dp"
+            app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
 
@@ -202,6 +203,18 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="149dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
