@@ -138,11 +138,12 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/ButtonColecionaveis"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/circle_secondary"
                     android:elevation="10dp"
-                    android:layout_margin="10dp"
                     android:src="@drawable/colecionaveis" />
 
                 <TextView
@@ -162,11 +163,12 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/ButtonLivros"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/circle_secondary"
                     android:elevation="10dp"
-                    android:layout_margin="10dp"
                     android:src="@drawable/livros" />
 
                 <TextView
@@ -186,11 +188,12 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/ButtonDecoracoes"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/circle_secondary"
                     android:elevation="10dp"
-                    android:layout_margin="10dp"
                     android:src="@drawable/decoracoes" />
 
                 <TextView

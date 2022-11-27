@@ -12,13 +12,19 @@ import android.widget.ImageButton;
 import com.example.splashscreen.InicioFragment;
 import com.example.splashscreen.R;
 import com.example.splashscreen.fragments.AcessoriosFragment;
+import com.example.splashscreen.fragments.ColecionaveisFragment;
+import com.example.splashscreen.fragments.DecoracoesFragment;
+import com.example.splashscreen.fragments.LivrosFragment;
 import com.example.splashscreen.fragments.VestuarioFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageButton btnPerfil, btnVestuario, btnAcessorios;
+    private ImageButton btnPerfil, btnVestuario, btnAcessorios, btnColecionaveis, btnLivros, btnDecoracoes;
     private AcessoriosFragment acessoriosFragment;
     private VestuarioFragment vestuarioFragment;
+    private ColecionaveisFragment colecionaveisFragment;
+    private LivrosFragment livrosFragment;
+    private DecoracoesFragment decoracoesFragment;
     private InicioFragment inicioFragment;
 
 
@@ -30,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnVestuario = findViewById(R.id.ButtonVestuario);
         btnAcessorios = findViewById(R.id.ButtonAcessorios);
+        btnColecionaveis = findViewById(R.id.ButtonColecionaveis);
+        btnLivros = findViewById(R.id.ButtonLivros);
+        btnDecoracoes = findViewById(R.id.ButtonDecoracoes);
 
 
         inicioFragment = new InicioFragment();
@@ -53,6 +62,50 @@ public class MainActivity extends AppCompatActivity {
                 acessoriosFragment = new AcessoriosFragment();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frameConteudo, acessoriosFragment);
+                transaction.commit();
+
+            }
+        });
+
+        btnColecionaveis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                colecionaveisFragment = new ColecionaveisFragment();
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frameConteudo, colecionaveisFragment);
+                transaction.commit();
+
+            }
+        });
+
+        btnColecionaveis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                colecionaveisFragment = new ColecionaveisFragment();
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frameConteudo, colecionaveisFragment);
+                transaction.commit();
+
+            }
+        });
+
+        btnLivros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                livrosFragment = new LivrosFragment();
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frameConteudo, livrosFragment);
+                transaction.commit();
+
+            }
+        });
+
+        btnDecoracoes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                decoracoesFragment = new DecoracoesFragment();
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frameConteudo, decoracoesFragment);
                 transaction.commit();
 
             }
