@@ -1,6 +1,5 @@
-package com.example.splashscreen;
+package com.example.splashscreen.activities;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,13 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.splashscreen.R;
+import com.example.splashscreen.activities.CadastroActivity;
+import com.example.splashscreen.activities.LoginActivity;
+import com.example.splashscreen.activities.MainActivity;
 import com.example.splashscreen.usuario.Usuario;
 import com.google.gson.Gson;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

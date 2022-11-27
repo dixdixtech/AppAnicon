@@ -1,4 +1,4 @@
-package com.example.splashscreen;
+package com.example.splashscreen.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.splashscreen.R;
 import com.example.splashscreen.usuario.Usuario;
 import com.example.splashscreen.usuario.UsuarioDAO;
 

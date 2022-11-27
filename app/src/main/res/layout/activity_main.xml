@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activities.MainActivity"
     android:background="@color/white">
 
 
@@ -87,11 +87,12 @@
                 android:clickable="true">
 
                 <ImageButton
+                    android:id="@+id/ButtonVestuario"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/circle_secondary"
                     android:elevation="10dp"
-                    android:layout_margin="10dp"
                     android:src="@drawable/ic_camisa" />
 
                 <TextView
@@ -112,11 +113,12 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/ButtonAcessorios"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:elevation="10dp"
                     android:layout_margin="10dp"
                     android:background="@drawable/circle_secondary"
+                    android:elevation="10dp"
                     android:padding="10dp"
                     android:src="@drawable/ic_mochila" />
 
@@ -208,13 +210,22 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="174dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="149dp"
+        android:layout_marginTop="8dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <FrameLayout
+        android:id="@+id/frameConteudo"
+        android:layout_width="409dp"
+        android:layout_height="491dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

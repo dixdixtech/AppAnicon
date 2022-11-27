@@ -1,10 +1,13 @@
-package com.example.splashscreen;
+package com.example.splashscreen.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.splashscreen.R;
+import com.example.splashscreen.activities.LoginActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

@@ -1,12 +1,13 @@
-package com.example.splashscreen;
+package com.example.splashscreen.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.ImageButton;
+
+import com.example.splashscreen.R;
 
 public class Activity_detalhes extends AppCompatActivity {
 
