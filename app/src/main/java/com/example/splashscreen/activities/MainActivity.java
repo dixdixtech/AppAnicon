@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.splashscreen.InicioFragment;
 import com.example.splashscreen.R;
 import com.example.splashscreen.fragments.AcessoriosFragment;
 import com.example.splashscreen.fragments.VestuarioFragment;
@@ -18,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btnPerfil, btnVestuario, btnAcessorios;
     private AcessoriosFragment acessoriosFragment;
     private VestuarioFragment vestuarioFragment;
-    Button button;
+    private InicioFragment inicioFragment;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         btnAcessorios = findViewById(R.id.ButtonAcessorios);
 
 
+        inicioFragment = new InicioFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.add(R.id.frameConteudo, inicioFragment);
+        transaction.commit();
 
         btnVestuario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,10 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-        button = findViewById(R.id.button);
         btnPerfil = findViewById(R.id.imageButtonPerfil);
         btnPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,12 +70,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent b = new Intent(getApplicationContext(), Activity_detalhes.class);
-                startActivity(b);
-            }
-        });
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent b = new Intent(getApplicationContext(), Activity_detalhes.class);
+//                startActivity(b);
+//            }
+//        });
     }
 }
