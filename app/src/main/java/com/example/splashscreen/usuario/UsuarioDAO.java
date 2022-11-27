@@ -5,14 +5,14 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.splashscreen.Conexao;
+import com.example.splashscreen.BancodeDados;
 
 public class UsuarioDAO {
-    private Conexao conexao;
+    private BancodeDados conexao;
     private SQLiteDatabase banco;
 
     public UsuarioDAO(Context applicationContext) {
-        conexao = new Conexao(applicationContext);
+        conexao = new BancodeDados(applicationContext);
         banco = conexao.getWritableDatabase();
     }
 

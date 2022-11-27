@@ -1,15 +1,28 @@
 package com.example.splashscreen.activities;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.loader.app.LoaderManager;
+import androidx.loader.content.Loader;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ListView;
+import android.widget.TextView;
 
+import com.example.splashscreen.BancodeDados;
+import com.example.splashscreen.CarregaProduto;
 import com.example.splashscreen.InicioFragment;
+import com.example.splashscreen.Produto;
 import com.example.splashscreen.R;
 import com.example.splashscreen.fragments.AcessoriosFragment;
 import com.example.splashscreen.fragments.ColecionaveisFragment;
@@ -17,9 +30,16 @@ import com.example.splashscreen.fragments.DecoracoesFragment;
 import com.example.splashscreen.fragments.LivrosFragment;
 import com.example.splashscreen.fragments.VestuarioFragment;
 
-public class MainActivity extends AppCompatActivity {
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity{
 
     private ImageButton btnPerfil, btnVestuario, btnAcessorios, btnColecionaveis, btnLivros, btnDecoracoes;
+    private EditText nm_produto;
     private AcessoriosFragment acessoriosFragment;
     private VestuarioFragment vestuarioFragment;
     private ColecionaveisFragment colecionaveisFragment;
@@ -28,12 +48,16 @@ public class MainActivity extends AppCompatActivity {
     private InicioFragment inicioFragment;
 
 
+    Produto produto = new Produto();
+    BancodeDados db=new BancodeDados(this);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
+        nm_produto = findViewById(R.id.input);
         btnVestuario = findViewById(R.id.ButtonVestuario);
         btnAcessorios = findViewById(R.id.ButtonAcessorios);
         btnColecionaveis = findViewById(R.id.ButtonColecionaveis);
@@ -131,4 +155,5 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
     }
+
 }

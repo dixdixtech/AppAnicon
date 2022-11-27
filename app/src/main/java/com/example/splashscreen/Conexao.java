@@ -1,51 +1,92 @@
 package com.example.splashscreen;
 
+import android.net.Uri;
+import android.util.JsonReader;
+import android.util.Log;
 
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
+import com.google.gson.Gson;
 
-public class Conexao extends SQLiteOpenHelper {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
-    private static final String name = "db_anicon.db";
-    private static final int version = 1;
+public class Conexao {
+private static final String LOG_TAG = Conexao.class.getSimpleName();
+    // Constantes utilizadas pela API
+    // URL para a API dos Produtos
+    private static final String PROD_URL = "URL DA API";
+    // Parametros da string de Busca
+    private static final String QUERY_PARAM = "Prod_Name";
 
-    public Conexao(Context context) {
-        super(context, name, null, version);
+    // Limitador da qtde de resultados
+    private static final String MAX_RESULTS = "maxResults";
+    // Parametro do tipo de impressão
+    private static final String TIPO_IMPRESSAO = "printType";
+
+    static String BuscaInfoProd(String queryString){
+        HttpURLConnection urlConnection = null;
+        BufferedReader reader = null;
+        String prodJSONString = null;
+
+        try {
+            Uri builtURI;
+            if(queryString == null){
+                builtURI = Uri.parse(PROD_URL).buildUpon()
+                        .build();
+            }
+            else {
+                String url1 = PROD_URL + queryString;
+                //Construção da URI de Busca
+                builtURI = Uri.parse(url1).buildUpon()
+                        .build();
+
+
+            }
+            // Converte a URI para a URL.
+            URL requestURL = new URL(builtURI.toString());
+            // Abre a conexão de rede
+            urlConnection = (HttpURLConnection) requestURL.openConnection();
+            urlConnection.setRequestMethod("GET");
+            urlConnection.connect();
+            // Busca o InputStream.
+            InputStream inputStream = urlConnection.getInputStream();
+            // Cria o buffer para o input stream
+            reader = new BufferedReader(new InputStreamReader(inputStream));
+            // Usa o StringBuilder para receber a resposta.
+            StringBuilder builder = new StringBuilder();
+            String linha;
+            while ((linha = reader.readLine()) != null) {
+                // Adiciona a linha a string.
+                builder.append(linha);
+                builder.append("\n");
+            }
+            if (builder.length() == 0) {
+                // se o stream estiver vazio não faz nada
+                return null;
+            }
+            prodJSONString = builder.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            // fecha a conexão e o buffer.
+            if (urlConnection != null) {
+                urlConnection.disconnect();
+            }
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        // escreve o Json no log
+        Log.d(LOG_TAG, prodJSONString);
+        return prodJSONString;
     }
 
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE tbUsuario(" +
-                "idUsuario INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "login TEXT NOT NULL," +
-                "senha TEXT NOT NULL," +
-                "nome TEXT NOT NULL)");
-        db.execSQL("CREATE TABLE tbProduto(" +
-                "cdProd INTEGER," +
-                "nomeProd TEXT NOT NULL," +
-                "animeProd TEXT," +
-                "precoProd TEXT NOT NULL)");
-        db.execSQL("CREATE TABLE tbFavoritos(" +
-                "fkUsuario INTEGER," +
-                "fkProd TEXT," +
-                "FOREIGN KEY (fkUsuario) REFERENCES tbUsuario (idUsuario), " +
-                "FOREIGN KEY (fkProd) REFERENCES tbProduto (cdProd))");
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS tbProduto");
-        db.execSQL("DROP TABLE IF EXISTS tbFavoritos");
-
-        onCreate(db);
-    }
-
-    public Cursor getNovaQuery(String sql)
-    {
-        SQLiteDatabase database = getWritableDatabase();
-        Cursor cursor = database.rawQuery(sql, null);
-        return cursor;
-    }
 }
