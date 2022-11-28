@@ -1,27 +1,16 @@
 package com.example.splashscreen.activities;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.loader.app.LoaderManager;
-import androidx.loader.content.Loader;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import com.example.splashscreen.BancodeDados;
-import com.example.splashscreen.CarregaProduto;
-import com.example.splashscreen.InicioFragment;
+import com.example.splashscreen.fragments.InicioFragment;
 import com.example.splashscreen.Produto;
 import com.example.splashscreen.R;
 import com.example.splashscreen.fragments.AcessoriosFragment;
@@ -29,12 +18,6 @@ import com.example.splashscreen.fragments.ColecionaveisFragment;
 import com.example.splashscreen.fragments.DecoracoesFragment;
 import com.example.splashscreen.fragments.LivrosFragment;
 import com.example.splashscreen.fragments.VestuarioFragment;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity{
 
