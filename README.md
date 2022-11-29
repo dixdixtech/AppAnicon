@@ -1,7 +1,5 @@
 ## Anicon Mobile App  
 
-<br/>
-
 ### O QUE O SISTEMA FAZ  
 
 <p align="justify">Aplicativo desenvolvido para a empresa Anicon, 
