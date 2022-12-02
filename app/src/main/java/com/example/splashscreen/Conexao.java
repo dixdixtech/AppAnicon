@@ -33,6 +33,7 @@ private static final String LOG_TAG = Conexao.class.getSimpleName();
         String prodJSONString = null;
 
         try {
+
             Uri builtURI;
             if(queryString == null){
                 builtURI = Uri.parse(PROD_URL).buildUpon()
