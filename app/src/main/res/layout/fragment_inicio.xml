@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ofertas do Dia"
+                android:text="@string/ofertas_do_dia"
                 android:textColor="@color/black"
                 android:padding="10dp"
                 android:paddingStart="18dp"
@@ -84,7 +84,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Frete grátis"
+                        android:text="@string/frete_gr_tis"
                         android:textColor="@color/green"
                         android:textStyle="bold|italic" />
                 </LinearLayout>
@@ -135,7 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Frete grátis"
+                        android:text="@string/frete_gr_tis"
                         android:textColor="@color/green"
                         android:textStyle="bold|italic" />
 
@@ -194,7 +194,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Frete grátis"
+                        android:text="@string/frete_gr_tis"
                         android:textColor="@color/green"
                         android:textStyle="bold|italic" />
                 </LinearLayout>
@@ -245,7 +245,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Frete grátis"
+                        android:text="@string/frete_gr_tis"
                         android:textColor="@color/green"
                         android:textStyle="bold|italic" />
 

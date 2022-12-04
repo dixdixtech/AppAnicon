@@ -24,11 +24,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/acessorios"
+                android:text="@string/acessorios_sugest"
                 android:textColor="@color/black"
                 android:padding="10dp"
                 android:paddingStart="18dp"
-                android:textSize="15dp"/>
+                android:textSize="15sp"/>
 
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
@@ -66,25 +66,27 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        app:srcCompat="@drawable/naruto_funko"></ImageView>
+                        app:srcCompat="@drawable/mochila_kakashi"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="R$ 189,90"
+                        android:text="@string/r_359_90"
                         android:textColor="@color/black" />
 
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="NARUTO FUNKO" />
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/almost_black"
+                        android:text="@string/mochila_kakashi_naruto" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Frete grátis"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/frete_gr_tis"
                         android:textColor="@color/green"
                         android:textStyle="bold|italic" />
                 </LinearLayout>
@@ -117,25 +119,27 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        app:srcCompat="@drawable/naruto_funko"></ImageView>
+                        app:srcCompat="@drawable/suporte_the_seven"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="R$ 189,90"
+                        android:text="@string/r_24_90"
                         android:textColor="@color/black" />
 
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="NARUTO FUNKO" />
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/almost_black"
+                        android:text="@string/suporte_para_celular_pop_the_seven_deadly_sins_hawk" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Frete grátis"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/frete_gr_tis"
                         android:textColor="@color/green"
                         android:textStyle="bold|italic" />
 
@@ -176,25 +180,27 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        app:srcCompat="@drawable/naruto_funko"></ImageView>
+                        app:srcCompat="@drawable/chaveiro_demon_slayer"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="R$ 189,90"
+                        android:text="@string/r_89_90"
                         android:textColor="@color/black" />
 
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="NARUTO FUNKO" />
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/almost_black"
+                        android:text="@string/chaveiro_demon_slayer_shinobu_kocho" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Frete grátis"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/frete_gr_tis"
                         android:textColor="@color/green"
                         android:textStyle="bold|italic" />
                 </LinearLayout>
@@ -227,25 +233,27 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        app:srcCompat="@drawable/naruto_funko"></ImageView>
+                        app:srcCompat="@drawable/pin_digimon"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="R$ 189,90"
+                        android:text="@string/r_59_90"
                         android:textColor="@color/black" />
 
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="NARUTO FUNKO" />
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/almost_black"
+                        android:text="@string/pin_digimon_patamon" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Frete grátis"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/frete_gr_tis"
                         android:textColor="@color/green"
                         android:textStyle="bold|italic" />
 

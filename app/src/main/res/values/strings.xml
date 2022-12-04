@@ -34,4 +34,28 @@
     <string name="no_search_term">Informe um termo de busca</string>
     <string name="no_network">verifique sua conexão.</string>
     <string name="no_results">\"Nenhum resultado encontrado\"</string>
+    <string name="sugest_es_de_itens">SUGESTÕES DE PRODUTOS</string>
+    <string name="camiseta_one_piece_grupo">CAMISETA ONE PIECE GRUPO</string>
+    <string name="frete_gr_tis">Frete grátis</string>
+    <string name="r_69_90">R$ 69,90</string>
+    <string name="camiseta_dupla_face_naruto_akatsuki">CAMISETA DUPLA FACE NARUTO AKATSUKI</string>
+    <string name="r_79_90">R$ 79,90</string>
+    <string name="moletom_digimon_megas">MOLETOM DIGIMON MEGAS</string>
+    <string name="r_299_90">R$ 299,90</string>
+    <string name="camiseta_attack_on_titan_muralha">CAMISETA ATTACK ON TITAN MURALHA</string>
+    <string name="vestuario_sugest">Sugestões de Vestuário</string>
+    <string name="acessorios_sugest">Sugestões de Acessórios</string>
+    <string name="colecionaveis_sugest">Sugestões de Colecionáveis</string>
+    <string name="livros_sugest">Sugestões de Livros</string>
+    <string name="decoracoes_sugest">Sugestões de Decorações</string>
+    <string name="ofertas_do_dia">Ofertas do Dia</string>
+    <string name="mochila_kakashi_naruto">MOCHILA KAKASHI - NARUTO</string>
+    <string name="r_359_90">R$ 359,90</string>
+    <string name="r_24_90">R$ 24,90</string>
+    <string name="suporte_para_celular_pop_the_seven_deadly_sins_hawk">SUPORTE PARA CELULAR POP THE SEVEN DEADLY SINS HAWK</string>
+    <string name="chaveiro_demon_slayer_shinobu_kocho">CHAVEIRO DEMON SLAYER SHINOBU KOCHO</string>
+    <string name="r_89_90">R$ 89,90</string>
+    <string name="pin_digimon_patamon">PIN DIGIMON PATAMON</string>
+    <string name="r_59_90">R$ 59,90</string>
+
 </resources>

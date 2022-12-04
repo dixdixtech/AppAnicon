@@ -64,8 +64,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         btnLivros = findViewById(R.id.ButtonLivros);
         btnDecoracoes = findViewById(R.id.ButtonDecoracoes);
 
+        /*
         txtnmproduto = findViewById(R.id.txtnmproduto);
         txtprecoproduto = findViewById(R.id.txtprecoproduto);
+         */
 
         if (getSupportLoaderManager().getLoader(0) != null) {
             getSupportLoaderManager().initLoader(0, null, this);

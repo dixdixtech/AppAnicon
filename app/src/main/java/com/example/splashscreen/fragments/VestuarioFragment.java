@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 
 import com.example.splashscreen.R;
 import com.example.splashscreen.activities.Activity_detalhes;
+import com.example.splashscreen.activities.ProfileActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -20,6 +21,7 @@ import com.example.splashscreen.activities.Activity_detalhes;
  * create an instance of this fragment.
  */
 public class VestuarioFragment extends Fragment {
+
 
     LinearLayout Produto01;
 
@@ -57,10 +59,13 @@ public class VestuarioFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
