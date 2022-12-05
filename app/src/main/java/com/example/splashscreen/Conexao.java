@@ -18,7 +18,7 @@ public class Conexao {
 private static final String LOG_TAG = Conexao.class.getSimpleName();
     // Constantes utilizadas pela API
     // URL para a API dos Produtos
-    private static final String PROD_URL = "URL DA API";
+    private static final String PROD_URL = "https://oldtealshop19.conveyor.cloud/";
     // Parametros da string de Busca
     private static final String QUERY_PARAM = "Prod_Name";
 
